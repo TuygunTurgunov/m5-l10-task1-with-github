@@ -1,6 +1,4 @@
 package uz.pdp.online.m5l10task1withgithub.controller;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -11,9 +9,7 @@ import uz.pdp.online.m5l10task1withgithub.entity.Hotel;
 import uz.pdp.online.m5l10task1withgithub.entity.Room;
 import uz.pdp.online.m5l10task1withgithub.repository.HotelRepository;
 import uz.pdp.online.m5l10task1withgithub.repository.RoomRepository;
-
 import java.util.Optional;
-
 @RestController
 @RequestMapping("/room")
 public class RoomController {
@@ -46,7 +42,7 @@ public class RoomController {
         return "room saved";
     }
 
-    //Read  pageable
+    //Read  pageable.
     @GetMapping
     public Page<Room>rooms(@RequestParam Integer page){
 
@@ -54,7 +50,6 @@ public class RoomController {
         Page<Room> roomPage = roomRepository.findAll(pageable);
         return roomPage;
     }
-
 
     //Read by hotel id pageable
     @GetMapping("/getByHotelId/{hotelId}")
