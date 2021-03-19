@@ -118,5 +118,4 @@ public class RoomController {
     return "room not found by id";
 }
 
-
 }
