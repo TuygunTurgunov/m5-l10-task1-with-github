@@ -1,11 +1,9 @@
-package uz.pdp.online.m5l10task1withgithub.dto;
+package uz.pdp.online.m5l10task1withgithub.payload;
 
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.ManyToOne;
 
 @Data
 @NoArgsConstructor

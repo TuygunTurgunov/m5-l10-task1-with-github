@@ -4,7 +4,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
-import uz.pdp.online.m5l10task1withgithub.dto.RoomDto;
+import uz.pdp.online.m5l10task1withgithub.payload.RoomDto;
 import uz.pdp.online.m5l10task1withgithub.entity.Hotel;
 import uz.pdp.online.m5l10task1withgithub.entity.Room;
 import uz.pdp.online.m5l10task1withgithub.repository.HotelRepository;
